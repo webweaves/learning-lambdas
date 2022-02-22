@@ -1,0 +1,9 @@
+A functional interface is an interface that implements OMLY one abstract method:
+
+    @FunctionalInterface
+    public interface MyFunction {
+        void handle(T event);
+    }
+
+For a lambda to use this functional interface it must implement the abstract method:
+
