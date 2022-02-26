@@ -24,13 +24,13 @@ public class ASimplePersonFactory {
                 factory.create("Dave",21,"Wales"),
                 factory.create("Steve",29,"England"),
                 factory.create("Trevor",3,"Austria"),
-                factory.create("Mark",6,""),
-                factory.create("Pete", 34,""),
-                factory.create("Stacy", 75,""),
-                factory.create("Tracy", 33,""),
-                factory.create("Stu", 64,""),
-                factory.create("Lee", 34,""),
-                factory.create("Fingers", 40,"")
+                factory.create("Mark",6,"Ireland"),
+                factory.create("Pete", 34,"Jamaca"),
+                factory.create("Stacy", 75,"Australia"),
+                factory.create("Tracy", 33,"Ukraine"),
+                factory.create("Stu", 64,"Poland"),
+                factory.create("Lee", 34,"New Zealand"),
+                factory.create("Fingers", 40,"USA")
             );
     }
 
