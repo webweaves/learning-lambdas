@@ -38,7 +38,7 @@ public class PredicateExample {
          */
         findDave(people, isNameDave.and(isPersonTwentyOne).and(areTheyFromWales))
             .ifPresentOrElse(
-                person -> System.out.printf("We have found %s", person.getName()),
+                person -> System.out.printf("We have found %s", person),
                 () -> System.out.println("Sorry, no matches here!")
             );
     }

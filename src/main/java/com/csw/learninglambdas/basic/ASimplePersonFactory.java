@@ -28,6 +28,7 @@ public class ASimplePersonFactory {
                 factory.create("Pete", 34,"Jamaca"),
                 factory.create("Stacy", 75,"Australia"),
                 factory.create("Tracy", 33,"Ukraine"),
+                factory.create("Soloman",31,"Wales"),
                 factory.create("Stu", 64,"Poland"),
                 factory.create("Lee", 34,"New Zealand"),
                 factory.create("Fingers", 40,"USA")
