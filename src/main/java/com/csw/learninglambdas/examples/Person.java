@@ -1,10 +1,10 @@
-package com.csw.learninglambdas.basic;
+package com.csw.learninglambdas.examples;
 
 public class Person {
 
-    private String name;
-    private Integer age;
-    private String country;
+    protected String name;
+    protected Integer age;
+    protected String country;
 
     public Person(String name, Integer age, String country) {
         this.name = name;

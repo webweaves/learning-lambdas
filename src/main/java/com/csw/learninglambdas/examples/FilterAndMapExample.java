@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.basic;
+package com.csw.learninglambdas.examples;
 
 import java.util.List;
 import java.util.stream.Collectors;

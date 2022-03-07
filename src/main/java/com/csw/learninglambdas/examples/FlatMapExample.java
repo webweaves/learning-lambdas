@@ -1,7 +1,4 @@
-package com.csw.learninglambdas.streams;
-
-import com.csw.learninglambdas.basic.ASimplePersonFactory;
-import com.csw.learninglambdas.basic.Person;
+package com.csw.learninglambdas.examples;
 
 import java.util.List;
 import java.util.regex.Pattern;
