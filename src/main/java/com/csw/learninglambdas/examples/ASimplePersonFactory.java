@@ -2,7 +2,6 @@ package com.csw.learninglambdas.examples;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ASimplePersonFactory {
 
@@ -33,19 +32,5 @@ public class ASimplePersonFactory {
                 factory.create("Lee", 34,"New Zealand"),
                 factory.create("Fingers", 40,"USA")
             );
-    }
-
-    public static void main(String[] args) {
-
-        List<Person> data = createPeople();
-
-        List<String> names = data.stream().map(p -> p.getName()).collect(Collectors.toList());
-
-        /**
-         * or, the lambda can be replaced with a method reference, this is equivalent of the line above
-         */
-        List<String> names2 = data.stream().map(Person::getName).collect(Collectors.toList());
-
-        names.forEach(System.out::println);
     }
 }

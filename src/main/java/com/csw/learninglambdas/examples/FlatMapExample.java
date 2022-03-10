@@ -2,6 +2,7 @@ package com.csw.learninglambdas.examples;
 
 import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class FlatMapExample {
 
@@ -10,7 +11,7 @@ public class FlatMapExample {
      * a flatmap takes one arg and returns many, in the below example we take the country
      * name and split it on a space and return each element before and after the space ie (1:m)
      */
-    private void streamIt() {
+    public List<String> generateFlatMap() {
         List<Person> people = ASimplePersonFactory.createPeople();
 
         Pattern spaces = Pattern.compile("\\s+");
@@ -18,10 +19,7 @@ public class FlatMapExample {
         people.stream().flatMap(person -> spaces.splitAsStream(person.getCountry()))
                 .forEach(System.out::println);
 
+        return people.stream().flatMap(person -> spaces.splitAsStream(person.getCountry()))
+                .collect(Collectors.toList());
     }
-
-    public static void main(String[] args) {
-        new FlatMapExample().streamIt();
-    }
-
 }
