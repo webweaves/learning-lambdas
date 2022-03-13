@@ -24,6 +24,7 @@ class ReduceExamplesTest {
         List<Person> people = new ArrayList<>();
         outputOptional(new ReduceExamples().reduceAgesWithOptional(people));
     }
+
     @Test
     public void calculatePeopleAges_no_need_for_optional() {
         List<Person> people = new ArrayList<>();
