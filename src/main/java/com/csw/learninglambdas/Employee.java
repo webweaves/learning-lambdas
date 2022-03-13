@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas;
 
 public class Employee extends Person {
 

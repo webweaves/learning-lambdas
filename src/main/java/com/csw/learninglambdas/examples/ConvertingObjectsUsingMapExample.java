@@ -1,5 +1,8 @@
 package com.csw.learninglambdas.examples;
 
+import com.csw.learninglambdas.Employee;
+import com.csw.learninglambdas.Person;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
