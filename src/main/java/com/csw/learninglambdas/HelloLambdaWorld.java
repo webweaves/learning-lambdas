@@ -83,6 +83,8 @@ public class HelloLambdaWorld {
 
     public void predicateExample() {
         /**
+         * A predicate is mainly used for filtering!
+         *
          * A predicate takes an object and returns either true or false based on the logic contained in your implememtation
          */
 
@@ -108,6 +110,8 @@ public class HelloLambdaWorld {
 
     public void functionExample() {
         /**
+         * A function is mainly used for mapping ( ...stream().mao(function)... )
+         *
          * The Function interface is defined like so: Function<T, R>
          *
          * and its one abstract method like this:

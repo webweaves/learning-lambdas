@@ -1,6 +1,6 @@
 package com.csw.learninglambdas.grouping;
 
-import com.csw.learninglambdas.Person;
+import com.csw.learninglambdas.dataobjects.Person;
 
 import java.util.List;
 import java.util.Map;

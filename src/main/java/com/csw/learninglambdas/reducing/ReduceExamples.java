@@ -1,6 +1,6 @@
 package com.csw.learninglambdas.reducing;
 
-import com.csw.learninglambdas.Person;
+import com.csw.learninglambdas.dataobjects.Person;
 
 import java.math.BigDecimal;
 import java.util.List;

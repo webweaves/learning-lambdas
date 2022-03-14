@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.common;
 
 import com.csw.learninglambdas.examples.ASimplePersonFactory;
-import com.csw.learninglambdas.Person;
+import com.csw.learninglambdas.dataobjects.Person;
 
 import java.util.List;
 import java.util.Optional;

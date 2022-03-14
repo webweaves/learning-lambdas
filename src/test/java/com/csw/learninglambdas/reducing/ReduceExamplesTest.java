@@ -1,6 +1,6 @@
 package com.csw.learninglambdas.reducing;
 
-import com.csw.learninglambdas.Person;
+import com.csw.learninglambdas.dataobjects.Person;
 import com.csw.learninglambdas.examples.ASimplePersonFactory;
 import org.junit.jupiter.api.Test;
 
@@ -8,8 +8,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ReduceExamplesTest {
 

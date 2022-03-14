@@ -1,4 +1,4 @@
-package com.csw.learninglambdas;
+package com.csw.learninglambdas.dataobjects;
 
 public class Person {
 
