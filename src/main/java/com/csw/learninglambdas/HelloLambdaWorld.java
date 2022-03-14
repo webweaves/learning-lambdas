@@ -1,10 +1,26 @@
 package com.csw.learninglambdas;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class HelloLambdaWorld {
+
+    /**
+     * There are 4 main categories we need to know inside-out when working with lambdas
+     *
+     * The 4 categories all found in the java.util.function package are:
+     *
+     * 1 - Supplier
+     * 2 - Consumer
+     * 3 - Predicate
+     * 4 - Function
+     *
+     */
 
     /**
      To start with Im going to make use of a supplier
@@ -88,12 +104,40 @@ public class HelloLambdaWorld {
 
         System.out.println("Is 99 greater than 100? " + isNumberGreaterThan100.test(99));
         System.out.println("Is 101 greater than 100? " + isNumberGreaterThan100.test(100));
+    }
 
+    public void functionExample() {
+        /**
+         * The Function interface is defined like so: Function<T, R>
+         *
+         * and its one abstract method like this:
+         *
+         * R apply(T t);
+         *
+         * Following the guide above
+         * 1 - take the method (Integer) myinteger
+         * 2 - the arrow syntax
+         * 3 - implement the apply method : the code between the { brackets }
+         */
+
+        Function<Integer, String> integerToStringFunction = i -> {
+            if (i == 1) return "One";
+            if (i == 2) return "Two";
+            if (i == 3) return "Three";
+            return "etc etc";
+        };
+
+        integerToStringFunction.apply(1);
+
+        Stream.of(1,2,3)
+                .map(integerToStringFunction)
+                .forEach(System.out::println);
     }
 
     public static void main(String[] args) {
         new HelloLambdaWorld().supplierExample();
         new HelloLambdaWorld().consumerExample();
         new HelloLambdaWorld().predicateExample();
+        new HelloLambdaWorld().functionExample();
     }
 }
