@@ -1,6 +1,7 @@
 package com.csw.learninglambdas.examples;
 
 import com.csw.learninglambdas.dataobjects.Person;
+import com.csw.learninglambdas.predicates.NoneMatchExample;
 import org.junit.jupiter.api.Test;
 
 import java.util.function.Predicate;

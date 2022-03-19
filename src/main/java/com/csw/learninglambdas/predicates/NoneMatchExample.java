@@ -1,6 +1,7 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas.predicates;
 
 import com.csw.learninglambdas.dataobjects.Person;
+import com.csw.learninglambdas.examples.ASimplePersonFactory;
 
 import java.util.List;
 import java.util.function.Predicate;

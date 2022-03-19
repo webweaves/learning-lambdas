@@ -8,15 +8,17 @@ import java.util.stream.Collectors;
 
 public class ConvertingObjectsUsingMapExample {
 
-    public ConvertingObjectsUsingMapExample() {
-        List<Person> people = ASimplePersonFactory.createPeople();
-
-        List<Employee> employees = people.stream()
+    /**
+     * take a list of Person and return a list of Employees
+     */
+    public List<Employee> makeAllPeopleEmployees(List<Person> people) {
+        return people.stream()
             .map(person -> new Employee(person, "programmer"))
             .collect(Collectors.toList());
     }
 
     public static void main(String[] args) {
-        new ConvertingObjectsUsingMapExample();
+        List<Person> people = ASimplePersonFactory.createPeople();
+        new ConvertingObjectsUsingMapExample().makeAllPeopleEmployees(people).forEach(System.out::println);
     }
 }

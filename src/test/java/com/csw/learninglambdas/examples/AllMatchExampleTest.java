@@ -1,5 +1,6 @@
 package com.csw.learninglambdas.examples;
 
+import com.csw.learninglambdas.predicates.AllMatchExample;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

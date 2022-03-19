@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.common;
+package com.csw.learninglambdas.predicates;
 
 import com.csw.learninglambdas.examples.ASimplePersonFactory;
 import com.csw.learninglambdas.dataobjects.Person;
@@ -12,7 +12,7 @@ public class PredicateExample {
     /**
      * this method doesnt change, what changes is the predicate that is passed into the method
      */
-    static Optional<Person> findDave(List<Person> people, Predicate<Person> predicate) {
+    static Optional<Person> findMatch(List<Person> people, Predicate<Person> predicate) {
         for (Person person: people) {
             if (predicate.test(person)) {
                 return Optional.of(person);
@@ -36,7 +36,7 @@ public class PredicateExample {
          * three predicate instances, isNameDave, isPerson21 & areTheyWelsh.
          * If all 3 predicated return true then call the ifPresentOrElse consumer otherwise call the runnable
          */
-        findDave(people, isNameDave.and(isPersonTwentyOne).and(areTheyFromWales))
+        findMatch(people, isNameDave.and(isPersonTwentyOne).and(areTheyFromWales))
             .ifPresentOrElse(
                 person -> System.out.printf("We have found %s", person),
                 () -> System.out.println("Sorry, no matches here!")
