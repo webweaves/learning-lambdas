@@ -7,3 +7,21 @@ A functional interface is an interface that implements OMLY one abstract method:
 
 For a lambda to use this functional interface it must implement the abstract method:
 
+
+Streams dont modify the source
+=================================
+Stream operations never modify the source of the stream eg, when call sorted() on a stream it doesnt sort
+the elements on the source of the stream. Instead it returns a new stream which the elements appear in sorted order.
+In contrast: Calling sort on an arraylist modifies the actual arraylist.
+
+How do you know if Intermediate or terminal operations?
+===========================================================
+How do you know which operations that are available on a stream are Intermediate operations or
+which are terminal operations. Look at the documentation.
+
+3 categories
+The static methods are factory methods for creating streams
+The non-static methods are stream operation methods
+The return type of each of the methods tell you whether the method is a intermediate or a terminal operation
+The ones that return a stream are intermediate operations and the ones that return anything other than a stream are
+terminal operations!
