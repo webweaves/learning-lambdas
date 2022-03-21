@@ -1,7 +1,8 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas.maps;
 
 import com.csw.learninglambdas.dataobjects.Employee;
 import com.csw.learninglambdas.dataobjects.Person;
+import com.csw.learninglambdas.util.ASimplePersonFactory;
 
 import java.util.List;
 import java.util.stream.Collectors;

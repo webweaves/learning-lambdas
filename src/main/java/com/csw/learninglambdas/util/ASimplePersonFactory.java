@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas.util;
 
 import com.csw.learninglambdas.dataobjects.Person;
 

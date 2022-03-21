@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas.streams;
 
 import java.util.UUID;
 import java.util.stream.Stream;

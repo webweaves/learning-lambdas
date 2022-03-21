@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.grouping;
 
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.examples.ASimplePersonFactory;
+import com.csw.learninglambdas.util.ASimplePersonFactory;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

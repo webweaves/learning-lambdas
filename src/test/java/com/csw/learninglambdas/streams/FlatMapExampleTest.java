@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas.streams;
 
 import com.csw.learninglambdas.maps.FlatMapExample;
 import org.junit.jupiter.api.Test;

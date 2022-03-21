@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.examples;
+package com.csw.learninglambdas.maps;
 
 import java.util.Arrays;
 import java.util.List;
