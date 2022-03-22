@@ -5,7 +5,7 @@ import com.csw.learninglambdas.dataobjects.Person;
 import java.util.Arrays;
 import java.util.List;
 
-public class ASimplePersonFactory {
+public class SimplePersonFactory {
 
     /**
      * instantiate a new factory, the Person::new command references the functional interface

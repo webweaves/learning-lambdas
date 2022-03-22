@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.streams;
 
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class ObtainingAStream {
 
     public static void main(String[] args) {
-        List<Person> people = ASimplePersonFactory.createPeople();
+        List<Person> people = SimplePersonFactory.createPeople();
 
         Stream<Person> stream1 = people.stream();
 

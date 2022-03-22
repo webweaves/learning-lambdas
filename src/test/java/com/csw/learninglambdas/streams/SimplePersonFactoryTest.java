@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.streams;
 
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -9,12 +9,12 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ASimplePersonFactoryTest {
+class SimplePersonFactoryTest {
 
     @Test
     void createPeople() {
 
-        List<Person> data = ASimplePersonFactory.createPeople();
+        List<Person> data = SimplePersonFactory.createPeople();
 
         List<String> names = data.stream()
                 .map(p -> p.getName())

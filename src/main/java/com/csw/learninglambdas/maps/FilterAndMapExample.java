@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.maps;
 
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,7 +17,7 @@ public class FilterAndMapExample {
      */
 
     public void filterAndMap() {
-        List<Person> people = ASimplePersonFactory.createPeople();
+        List<Person> people = SimplePersonFactory.createPeople();
 
         Predicate<Person> isFromWales = person -> person.getCountry().equals("Wales");
         Predicate<Person> isOlderThanThirty = person -> person.getAge() > 30;

@@ -1,6 +1,6 @@
 package com.csw.learninglambdas.predicates;
 
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 import com.csw.learninglambdas.dataobjects.Person;
 
 import java.util.List;
@@ -29,7 +29,7 @@ public class PredicateExample {
     Predicate<Person> areTheyFromWales = person -> person.getCountry().equals("Wales");
 
     public void letsFindDave() {
-        List<Person> people = ASimplePersonFactory.createPeople();
+        List<Person> people = SimplePersonFactory.createPeople();
 
         /**
          * this is the crux of the operation, the line below is calling a method and chaining

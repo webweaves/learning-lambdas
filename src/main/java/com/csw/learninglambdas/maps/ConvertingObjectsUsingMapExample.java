@@ -2,7 +2,7 @@ package com.csw.learninglambdas.maps;
 
 import com.csw.learninglambdas.dataobjects.Employee;
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,7 +19,7 @@ public class ConvertingObjectsUsingMapExample {
     }
 
     public static void main(String[] args) {
-        List<Person> people = ASimplePersonFactory.createPeople();
+        List<Person> people = SimplePersonFactory.createPeople();
         new ConvertingObjectsUsingMapExample().makeAllPeopleEmployees(people).forEach(System.out::println);
     }
 }

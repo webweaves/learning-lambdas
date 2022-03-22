@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.reducing;
 
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -13,7 +13,7 @@ class ReduceExamplesTest {
 
     @Test
     public void calculatePeopleAges_items() {
-        List<Person> people = ASimplePersonFactory.createPeople();
+        List<Person> people = SimplePersonFactory.createPeople();
         outputOptional(new ReduceExamples().reduceAgesWithOptional(people));
     }
 

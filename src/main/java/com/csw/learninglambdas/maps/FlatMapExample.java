@@ -1,7 +1,7 @@
 package com.csw.learninglambdas.maps;
 
 import com.csw.learninglambdas.dataobjects.Person;
-import com.csw.learninglambdas.util.ASimplePersonFactory;
+import com.csw.learninglambdas.util.SimplePersonFactory;
 
 import java.util.List;
 import java.util.regex.Pattern;
@@ -15,7 +15,7 @@ public class FlatMapExample {
      * name and split it on a space and return each element before and after the space ie (1:m)
      */
     public List<String> generateFlatMap() {
-        List<Person> people = ASimplePersonFactory.createPeople();
+        List<Person> people = SimplePersonFactory.createPeople();
 
         Pattern spaces = Pattern.compile("\\s+");
 
