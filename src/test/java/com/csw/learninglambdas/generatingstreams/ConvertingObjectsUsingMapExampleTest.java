@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.streams;
+package com.csw.learninglambdas.generatingstreams;
 
 import com.csw.learninglambdas.dataobjects.Employee;
 import com.csw.learninglambdas.dataobjects.Person;

@@ -1,4 +1,4 @@
-package com.csw.learninglambdas.streams;
+package com.csw.learninglambdas.generatingstreams;
 
 import com.csw.learninglambdas.predicates.AnyMatchExample;
 import org.junit.jupiter.api.Test;

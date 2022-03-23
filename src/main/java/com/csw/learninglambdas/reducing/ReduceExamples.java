@@ -22,6 +22,12 @@ public class ReduceExamples {
      * <p>
      * The reduce call returns an Optional
      *
+     * The reduce method takes two parameters, the first is the running total and the second is the next
+     * number to add to the total
+     *
+     * .reduce((result, element) -> result.add(element));
+     * This can be shorthanded to .reduce(BigDecimal::add);
+     *
      * @param peopleList
      * @return Optional
      */
