@@ -2,6 +2,10 @@
 
 ###I put off learning lambdas for some time, I can not put it off no longer.  Here are some code snippets written to help me digest functional programming, streams and lambda expressions. I hope you find them useful!
 
+A lambda expression is an anonymous method.
+A lambda expression implements a functional interface.
+A functional interface has a single abstract method.
+
 A functional interface is an interface that defines ONLY ONE abstract method:
 
     @FunctionalInterface
