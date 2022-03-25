@@ -15,6 +15,8 @@ A functional interface is an interface that defines ONLY ONE abstract method:
 
 For a lambda to use this functional interface it must implement the abstract method.
 
+Lambda expressions can be implemented inline.
+
 Avoid side effects!
 ======================
 Remember, do not violate the functional programming principal of not having side effects in functions, do not modify any object references outside of the lambda, instead make use of the terminal operators!
